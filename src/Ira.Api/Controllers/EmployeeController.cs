@@ -21,7 +21,7 @@ namespace Ira.Api.Controllers
             _logger = logger;
             _service = service;
         }
-
+        // Crear Empleado
         [HttpGet]
         public ActionResult<Employee> GetById([FromQuery] Guid id)
         {
@@ -39,7 +39,7 @@ namespace Ira.Api.Controllers
 
             return Ok(employee);
         }
-
+        //Obtener Empleados por Posición
         [HttpGet("position/{position}")]
         public ActionResult<EmployeeResponse> GetEmployeeByPosition(string position)
         {
@@ -71,6 +71,8 @@ namespace Ira.Api.Controllers
             return Ok(result);
         }
 
+
+        // Actualizar Email del Empleado
         [HttpPut("{id}")]
         public ActionResult<Employee> UpdateEmployee(Guid id, [FromQuery] string email)
         {

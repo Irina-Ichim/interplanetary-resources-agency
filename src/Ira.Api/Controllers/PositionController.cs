@@ -17,7 +17,7 @@ namespace Ira.Api.Controllers
         {
             _logger = logger;
         }
-
+        //Obtener Posiciones
         [HttpGet]
         public ActionResult GetPositions()
         {

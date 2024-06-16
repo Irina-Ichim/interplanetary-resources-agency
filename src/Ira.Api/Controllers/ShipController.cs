@@ -20,6 +20,7 @@ namespace Ira.Api.Controllers
             _service = service;
         }
 
+        // Obtener Todas las Naves
         [HttpGet]
         public ActionResult<List<Ship>> GetAll()
         {
@@ -28,7 +29,7 @@ namespace Ira.Api.Controllers
             return Ok(ships);
         }
 
-
+        // Crear Naves
         [HttpPost]
         public ActionResult<Ship> CreateShip([FromQuery] int quantity)
         {

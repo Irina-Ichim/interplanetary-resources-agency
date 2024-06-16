@@ -21,6 +21,7 @@ namespace Ira.Api.Controllers
             _emailService = emailService;
         }
 
+        //Enviar Correo Electrónico
         [HttpPost("SendEmail")]
         public ActionResult SendEmail(SendEmailRequest request)
         {

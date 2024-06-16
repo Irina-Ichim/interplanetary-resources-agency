@@ -1,4 +1,5 @@
 #See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+#Este Dockerfile se usa para automatizar la construcción y ejecución de la aplicación Ira.Api en un contenedor Docker, facilitando su despliegue y pruebas.
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
